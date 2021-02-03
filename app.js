@@ -19,7 +19,7 @@ app.use(passport.session());
 
 
 require('./controller/facebook.setup');
-mongoose.connect('mongodb://localhost/advancedproject5');
+mongoose.connect('mongodb://localhost/auth1');
 
 app.get('/',(req,res)=>{
 	res.sendFile(__dirname + '/views/index.html');
